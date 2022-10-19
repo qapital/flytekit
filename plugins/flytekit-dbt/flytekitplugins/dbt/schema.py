@@ -86,11 +86,14 @@ class BaseDBTOutput:
     ----------
     command : str
         Complete CLI command and flags that was executed by DBT Task.
+    logs : [str]
+        std output logs
     exit_code : int
         Exit code returned by DBT CLI.
     """
 
     command: str
+    logs: [str]
     exit_code: int
 
 
